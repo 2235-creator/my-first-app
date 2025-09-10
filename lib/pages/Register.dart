@@ -176,7 +176,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
     http
         .post(
-          Uri.parse("http://192.168.22.162:3000/customers/"),
+          Uri.parse("http://192.168.21.174:3000/customers/"),
           headers: {"Content-Type": "application/json; charset=utf-8"},
           body: customerRegisterPostResquestToJson(req),
         )

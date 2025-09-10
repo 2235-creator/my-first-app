@@ -80,7 +80,7 @@ class _ShowTripPageState extends State<ShowTripPage> {
     var config = await Configuration.getConfig();
     url = config['apiEndpoint'];
 
-    var res = await http.get(Uri.parse('http://192.168.22.162:3000/trips'));
+    var res = await http.get(Uri.parse('http://192.168.21.174:3000/trips'));
     tripGetResponses = tripGetResponseFromJson(res.body);
     tripGetall = tripGetResponseFromJson(res.body);
 
