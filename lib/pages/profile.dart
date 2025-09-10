@@ -55,13 +55,13 @@ class _ProfilePageState extends State<ProfilePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     TextButton(
-                      onPressed: () {
-                      Navigator.pop(context);
-                      delete();
-                      },
+                      onPressed: () {},
                       child: const Text('ปิด')),
                     FilledButton(
-                      onPressed: () {}, child: const Text('ยืนยัน'))
+                      onPressed: () {
+                        Navigator.pop(context);
+                      delete();
+                      }, child: const Text('ยืนยัน'))
                   ],
                   ),
                 ],
